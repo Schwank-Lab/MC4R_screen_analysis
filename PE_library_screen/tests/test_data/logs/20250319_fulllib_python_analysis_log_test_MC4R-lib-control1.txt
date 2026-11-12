@@ -1,0 +1,43 @@
+Loading template file: 20240624_mc4r_library_designed_final.csv
+
+Processing sample: MC4R-lib-control-rep1
+Processing MC4R-lib-control-rep1_Spacer.fastq.gz...
+Processed 100000 reads
+Processed 200000 reads
+Processed 300000 reads
+Finished processing MC4R-lib-control-rep1_Spacer.fastq.gz
+Processing MC4R-lib-control-rep1_target_5trim.fastq.gz...
+Processed 100000 reads
+Processed 200000 reads
+Processed 300000 reads
+Finished processing MC4R-lib-control-rep1_target_5trim.fastq.gz
+Processing MC4R-lib-control-rep1_RTTtrim.fastq.gz...
+Processed 100000 reads
+Processed 200000 reads
+Processed 300000 reads
+Finished processing MC4R-lib-control-rep1_RTTtrim.fastq.gz
+Filtering reads for tevopreq sequence in extension (long read mode)...
+Reads after tevopreq filtering: 314527 of 322265 97.6%)
+Analyzing target file: MC4R-lib-control-rep1_target_5trim.fastq.gz
+Processed 100000 reads
+Processed 200000 reads
+Processed 300000 reads
+Analysis loop completed in 11.61 seconds
+/mnt/MC4R/mc4r_library_analysis/scripts/self_targeting_analysis.py:431: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  templatedf['totalreads'].replace(0, np.nan, inplace=True)
+/mnt/MC4R/mc4r_library_analysis/scripts/self_targeting_analysis.py:431: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  templatedf['totalreads'].replace(0, np.nan, inplace=True)
+Unique matched variants: 488
+Total reads: 322265
+Successfully assigned reads: 241124
+Recombined reads at extension: 7738
+Percentage extension recombined: 2.4%
+Recombined reads at scaffold: 73403
+Percentage scaffold recombined: 23.34%
+Summary statistics saved to analysis/20250415_MC4R-lib-control-rep1_summary_stats.csv
+Results saved to analysis/20250415_MC4R-lib-control-rep1_analysisdf_focused.csv

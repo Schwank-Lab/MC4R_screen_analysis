@@ -1,0 +1,58 @@
+This is cutadapt 5.0 with Python 3.9.21
+Command line parameters: -j 0 -a GTTTCAGA -m 19 -M 19 --discard-untrimmed -o test_MC4R-lib-control2_Spacer.fastq.gz test_MC4R-lib-control2_spacer_5trim.fastq.gz
+Processing single-end reads on 12 cores ...
+
+=== Summary ===
+
+Total reads processed:                  24,736
+Reads with adapters:                    24,376 (98.5%)
+
+== Read fate breakdown ==
+Reads that were too short:                 270 (1.1%)
+Reads that were too long:                  400 (1.6%)
+Reads discarded as untrimmed:                0 (0.0%)
+Reads written (passing filters):        24,066 (97.3%)
+
+Total basepairs processed:     3,083,835 bp
+Total written (filtered):        457,254 bp (14.8%)
+
+=== Adapter 1 ===
+
+Sequence: GTTTCAGA; Type: regular 3'; Length: 8; Trimmed: 24376 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-8 bp: 0
+
+Bases preceding removed adapters:
+  A: 32.7%
+  C: 28.2%
+  G: 26.6%
+  T: 12.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	4	386.5	0	4
+22	1	0.4	0	1
+25	1	0.4	0	1
+97	1	0.4	0	1
+98	1	0.4	0	1
+100	1	0.4	0	1
+101	2	0.4	0	2
+102	132	0.4	0	132
+103	152	0.4	0	152
+104	809	0.4	0	809
+105	5658	0.4	0	5658
+106	17177	0.4	0	17177
+107	203	0.4	0	203
+108	20	0.4	0	20
+109	6	0.4	0	6
+110	4	0.4	0	4
+112	44	0.4	0	44
+113	5	0.4	0	5
+114	148	0.4	0	148
+115	4	0.4	0	4
+116	1	0.4	0	1
+123	1	0.4	0	1
+124	1	0.4	0	1

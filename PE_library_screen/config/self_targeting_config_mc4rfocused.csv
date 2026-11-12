@@ -1,0 +1,27 @@
+section,parameter,value,description
+ESSENTIAL,library_design_file,20250508_mc4r_focused_library.csv,CSV file with library design information
+ESSENTIAL,library_size,381,Number of distinct members in the library
+ESSENTIAL,library_name,MC4R-focused,Name of the current library
+ESSENTIAL,date_prefix,20250508,Date prefix for output files (YYYYMMDD format)
+ESSENTIAL,target_adapter,GTCATAGGAGTCAC,Adapter sequence for target trimming
+ESSENTIAL,spacer_adapter,gaaacaccG,Adapter sequence for spacer trimming (5')
+ESSENTIAL,spacer_adapter_end,GTTTCAGA,Adapter sequence for spacer trimming (3')
+ESSENTIAL,rtt_adapter,AGTCGGTGC,Adapter sequence for RTT trimming
+ESSENTIAL,target_start_to_nick_distance,27,Distance in bases from the start of target sequence (after cutadapt; _target_5trim.fastq.gz file) to the nick site
+ESSENTIAL,nick_pos_in_wide_initial_target,26,Position of nick within the wide_initial_target template sequence.
+ESSENTIAL,required_columns,"uniquename,Original_Sequence,Edited-Sequences,Target-Strand,Mutation_Type,Correction_Type,Correction_Length,Editing_Position,PBSlength,RToverhanglength,RTlength,EditedAllele,OriginalAllele,Spacer-Sequence,PBSrevcomp,RTseqoverhangrevcomp,RTrevcomp,pegRNA,Editor_Variant,protospacermt,extensionmt,RTmt,RToverhangmt,PBSmt,original_base_mt,edited_base_mt,original_base_mt_nan,edited_base_mt_nan,RToverhangmatches,wide_initial_target,wide_mutated_target,protospacerlocation_only_initial,PBSlocation,RT_initial_location,RT_mutated_location,deepeditposition,barcode,PRIDICT2_0_editing_Score_deep_HEK,PRIDICT2_0_editing_Score_deep_K562",Comma-separated list of required columns
+PATHS,fastq_folder,fastqs/,Directory containing input fastq files
+PATHS,output_folder,temp_output/,Directory for intermediate output files
+PATHS,log_folder,logs/,Directory for log files
+PATHS,analysis_folder,analysis/,Directory for analysis results
+PERFORMANCE,cutadapt_threads,0,Number of threads for cutadapt (0 = use all available)
+PERFORMANCE,min_coverage,500,Minimum desired coverage (reads per library member after all filtering steps)
+PERFORMANCE,read_progress_interval,100000,Number of reads to process before showing progress update
+PERFORMANCE,min_quality,27.5,Minimum average Phred quality score for reads
+SEQUENCE,barcode_start,0,Start position (0-based) of the barcode sequence within the target sequence (default = 0).
+SEQUENCE,barcode_length,6,Length of the barcode sequence to extract from target
+SEQUENCE,spacer_length,19,Length of the spacer sequence in bases (without leading G that is cut with spacer_adapter above)
+SEQUENCE,basesbeforenick,2,Number of bases before the nick site to extract
+SEQUENCE,baseafterflap,5,Number of bases after the flap to extract
+SEQUENCE,rtt_lookup_length,6,Number of leading bases from RTT sequence to use for lookup
+SEQUENCE,read_length,300,"Original read length from sequencer (usually PE 150, 250, or 300bp)"

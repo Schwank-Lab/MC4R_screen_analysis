@@ -1,0 +1,10 @@
+sample,library,replicate,editor,r1_file,r2_file
+MC4R-lib-PE7-rep1,MC4R-lib,1,PE7,MC4R_lib_PE71_merge_L001_R1_001.fastq.gz,MC4R_lib_PE71_merge_L001_R2_001.fastq.gz
+MC4R-lib-PE7-rep2,MC4R-lib,2,PE7,MC4R_lib_PE72_S8_L001_R1_001.fastq.gz,MC4R_lib_PE72_S8_L001_R2_001.fastq.gz
+MC4R-lib-PE7-rep3,MC4R-lib,3,PE7,MC4R_lib_PE73_S9_L001_R1_001.fastq.gz,MC4R_lib_PE73_S9_L001_R2_001.fastq.gz
+MC4R-lib-Pemax-rep1,MC4R-lib,1,PEmax,MC4R_lib_PEmax1_S4_L001_R1_001.fastq.gz,MC4R_lib_PEmax1_S4_L001_R2_001.fastq.gz
+MC4R-lib-Pemax-rep2,MC4R-lib,2,PEmax,MC4R_lib_PEmax2_S5_L001_R1_001.fastq.gz,MC4R_lib_PEmax2_S5_L001_R2_001.fastq.gz
+MC4R-lib-Pemax-rep3,MC4R-lib,3,PEmax,MC4R_lib_PEmax3_S6_L001_R1_001.fastq.gz,MC4R_lib_PEmax3_S6_L001_R2_001.fastq.gz
+MC4R-lib-control-rep1,MC4R-lib,1,control,MC4R_lib_control1_S1_L001_R1_001.fastq.gz,MC4R_lib_control1_S1_L001_R2_001.fastq.gz
+MC4R-lib-control-rep2,MC4R-lib,2,control,MC4R_lib_control2_S2_L001_R1_001.fastq.gz,MC4R_lib_control2_S2_L001_R2_001.fastq.gz
+MC4R-lib-control-rep3,MC4R-lib,3,control,MC4R_lib_control3_S3_L001_R1_001.fastq.gz,MC4R_lib_control3_S3_L001_R2_001.fastq.gz

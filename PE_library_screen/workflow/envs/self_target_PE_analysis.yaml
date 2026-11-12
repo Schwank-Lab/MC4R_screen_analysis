@@ -1,0 +1,13 @@
+name: self_target_PE_analysis
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.9
+  - biopython=1.81
+  - pandas
+  - numpy
+  - cutadapt
+  - tqdm
+  - scikit-learn
+  - scipy

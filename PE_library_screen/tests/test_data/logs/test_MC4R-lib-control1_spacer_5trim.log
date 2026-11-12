@@ -1,0 +1,38 @@
+This is cutadapt 5.0 with Python 3.9.21
+Command line parameters: -j 0 -g gaaacaccG --discard-untrimmed -o test_MC4R-lib-control1_spacer_5trim.fastq.gz test_MC4R-lib-control1_R2.fastq.gz
+Processing single-end reads on 12 cores ...
+
+=== Summary ===
+
+Total reads processed:                  25,000
+Reads with adapters:                    24,727 (98.9%)
+
+== Read fate breakdown ==
+Reads discarded as untrimmed:              273 (1.1%)
+Reads written (passing filters):        24,727 (98.9%)
+
+Total basepairs processed:     3,766,302 bp
+Total written (filtered):      3,082,568 bp (81.8%)
+
+=== Adapter 1 ===
+
+Sequence: GAAACACCG; Type: regular 5'; Length: 9; Trimmed: 24727 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	390.6	0	1
+4	2	97.7	0	2
+14	1	0.1	0	1
+21	2	0.1	0	2
+22	1	0.1	0	1
+23	6	0.1	0	6
+24	17	0.1	0	17
+25	282	0.1	0	282
+26	24314	0.1	0	24314
+27	99	0.1	0	99
+28	1	0.1	0	1
+67	1	0.1	0	1

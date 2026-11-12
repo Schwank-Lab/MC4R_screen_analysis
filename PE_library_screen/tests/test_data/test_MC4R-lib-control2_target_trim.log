@@ -1,0 +1,2 @@
+This is cutadapt 5.0 with Python 3.9.21
+Command line parameters: -j 0 -g GTCATAGGAGTCAC --discard-untrimmed -o test_MC4R-lib-control2_target_5trim.fastq.gz test_MC4R-lib-control1_R2.fastq.gz

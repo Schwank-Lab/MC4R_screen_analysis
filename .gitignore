@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Snakemake
+.snakemake/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+~$*
+
+# Pipeline outputs (keep the *_in_here.txt placeholders)
+PE_library_screen/analysis/*
+!PE_library_screen/analysis/analysis_files_in_here.txt
+PE_library_screen/fastqs/*
+!PE_library_screen/fastqs/fastq_files_in_here.txt
+!PE_library_screen/fastqs/merge_lowread_fastqs.sh
+PE_library_screen/logs/*
+!PE_library_screen/logs/log_files_in_here.txt
+PE_library_screen/temp_output/*
+!PE_library_screen/temp_output/temp_output_files_in_here.txt

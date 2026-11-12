@@ -1,0 +1,51 @@
+# Convert CSV config to YAML at the start (always)
+import os
+import glob
+import datetime
+import pandas as pd
+import sys
+import re
+from scripts.workflow_helpers import get_samples_from_sheet
+
+# First, ensure the config exists
+if not os.path.exists("config/self_targeting_config.csv"):
+    sys.exit("Error: config/self_targeting_config.csv not found. Please create this file.")
+
+# Convert CSV config to YAML - do this once at the beginning
+shell("python scripts/read_config.py --csv config/self_targeting_config.csv --yaml config/config.yaml")
+
+# Then use the standard Snakemake config mechanism
+configfile: "config/config.yaml"
+
+# Add to config
+config["sample_sheet"] = "config/samples.csv"
+
+try:
+    # Get samples from sample sheet
+    SAMPLES, SAMPLE_FILES = get_samples_from_sheet(
+        config["sample_sheet"], 
+        config["fastq_folder"]
+    )
+except ValueError as e:
+    sys.exit(f"Error: {e}")
+
+# Get date prefix for output files
+DATE_PREFIX = config["date_prefix"]
+
+# Include rules
+include: "workflow/rules/template_validation.smk"
+include: "workflow/rules/cutadapt.smk"
+include: "workflow/rules/analysis.smk"
+include: "workflow/rules/statistics.smk"
+
+# Target rule
+rule all:
+    input:
+        expand(config["analysis_folder"] + "{date_prefix}_{library_name}_template_validation.txt",
+               date_prefix=DATE_PREFIX, library_name=config["library_name"]),
+        expand(config["analysis_folder"] + "{date_prefix}_{library_name}_{sample}_analysisdf_focused.csv", 
+               sample=SAMPLES, date_prefix=DATE_PREFIX, library_name=config["library_name"]),
+        expand(config["analysis_folder"] + "{date_prefix}_{library_name}_statistics.csv", 
+               date_prefix=DATE_PREFIX, library_name=config["library_name"]),
+        expand(config["analysis_folder"] + "{date_prefix}_{library_name}_cutadapt_stats.csv", 
+               date_prefix=DATE_PREFIX, library_name=config["library_name"])
