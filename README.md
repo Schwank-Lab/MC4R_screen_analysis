@@ -25,7 +25,7 @@ Raw sequencing data: [SRA Link]
 
 ## Contact
 
-Peter Kulcsar, [peter.kulcsar@uzh.ch](mailto:peter.kulcsar@uzh.ch)
+Peter Kulcsar [peter.kulcsar@uzh.ch](mailto:peter.kulcsar@uzh.ch)
 
 ## License
 
