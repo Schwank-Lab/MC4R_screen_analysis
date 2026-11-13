@@ -21,7 +21,7 @@ Each folder has its own README with setup and run instructions. The two analyses
 
 ## Data
 
-Raw sequencing data: [SRA Link]
+Raw sequencing data: [PRJNA1355207]()
 
 ## Contact
 
