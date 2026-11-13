@@ -29,4 +29,4 @@ Peter Kulcsar [peter.kulcsar@uzh.ch](mailto:peter.kulcsar@uzh.ch)
 
 ## License
 
-[LICENSE]
+This project is licensed under the [MIT License](LICENSE).
