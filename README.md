@@ -2,8 +2,8 @@
 
 Analysis code for the MC4R screens described in:
 
-> **[TITLE OF PUBLICATION]**
-> [Author 1], [Author 2], [Author 3], ... [Last Author]
+> **In vivo genome editing of Mc4r prevents and reverses obesity in mice**
+> Péter István Kulcsár, Elina Andrea Villiger, et al.
 > *[Journal]*, [Year]
 > DOI: [https://doi.org/XX.XXXX/XXXXXX](https://doi.org/XX.XXXX/XXXXXX)
 > Link: [URL to paper]
